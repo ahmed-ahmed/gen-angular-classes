@@ -16,5 +16,5 @@ const component = {
     template
 };
 
-app.component('<<capCase name>>', component);
+app.component('<<kebabCase name>>', component);
 

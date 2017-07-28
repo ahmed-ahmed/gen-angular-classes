@@ -1,21 +1,20 @@
 'use strict';
-
+import app from '../../modules.js';
 import template from './<<kebabCase name>>.html';
 
-function <<capCase name>>Controller() {
+class <<capCase name>>Controller{
     'ngInject';
 
-    this.$onInit = () => {
+    $onInit(){
     };
 }
 
-const <<camelCase name>>Component = {
+const component = {
     bindings: {
     },
     controller: <<capCase name>>Controller,
     template
 };
 
-angular.module('scifinder.<<camelCase name>>')
-    .component('sf<<capCase name>>', <<camelCase name>>Component);
+app.component('<<capCase name>>', component);
 
